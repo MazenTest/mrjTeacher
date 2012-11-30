@@ -1,0 +1,106 @@
+
+Log Entry : 
+03/17/2012 03:46:21
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/NewsDetails.aspx?Nid=15 Error Message: Procedure or function 'AddComment' expects parameter '@P_REF_CONTENT_ID', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 936
+   at MyComponent.Business.BLL.AddComment(Comment comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 163
+   at GUI_PublicPages_NewsDetails.btnSaveComment_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\NewsDetails.aspx.cs:line 54
+__________________________
+
+Log Entry : 
+03/17/2012 03:48:01
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/NewsDetails.aspx?Nid=15 Error Message: Procedure or function 'AddComment' expects parameter '@P_REF_CONTENT_ID', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 936
+   at MyComponent.Business.BLL.AddComment(Comment comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 163
+   at GUI_PublicPages_NewsDetails.btnSaveComment_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\NewsDetails.aspx.cs:line 54
+__________________________
+
+Log Entry : 
+03/17/2012 03:50:56
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/NewsDetails.aspx?Nid=15 Error Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_COMMENT_USERS". The conflict occurred in database "tbz_2-3-2012", table "dbo.USERS", column 'USER_ID'.
+The statement has been terminated. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 936
+   at MyComponent.Business.BLL.AddComment(Comment comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 163
+   at GUI_PublicPages_NewsDetails.btnSaveComment_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\NewsDetails.aspx.cs:line 54
+__________________________
+
+Log Entry : 
+03/17/2012 03:52:30
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/NewsDetails.aspx?Nid=15 Error Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_COMMENT_USERS". The conflict occurred in database "tbz_2-3-2012", table "dbo.USERS", column 'USER_ID'.
+The statement has been terminated. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 936
+   at MyComponent.Business.BLL.AddComment(Comment comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 163
+   at GUI_PublicPages_NewsDetails.btnSaveComment_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\NewsDetails.aspx.cs:line 54
+__________________________
+
+Log Entry : 
+03/17/2012 03:53:33
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/NewsDetails.aspx?Nid=15 Error Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_COMMENT_CONTENTS". The conflict occurred in database "tbz_2-3-2012", table "dbo.CONTENTS", column 'CONTENT_ID'.
+The statement has been terminated. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 936
+   at MyComponent.Business.BLL.AddComment(Comment comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 163
+   at GUI_PublicPages_NewsDetails.btnSaveComment_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\NewsDetails.aspx.cs:line 54
+__________________________
+
+Log Entry : 
+03/17/2012 03:55:31
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/NewsDetails.aspx?Nid=15 Error Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_COMMENT_CONTENTS". The conflict occurred in database "tbz_2-3-2012", table "dbo.CONTENTS", column 'CONTENT_ID'.
+The statement has been terminated. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 936
+   at MyComponent.Business.BLL.AddComment(Comment comment) in F:\Development\Graduation Projects\NewHamdi\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 163
+   at GUI_PublicPages_NewsDetails.btnSaveComment_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\NewsDetails.aspx.cs:line 54
+__________________________

@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeFile="AdminMaster.master.cs"
+    Inherits="AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link href="../css/layout.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/Menu/MenuMatic.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-align: center;
+        }
+        .menutd
+        {
+            background-color: #194896;
+            color: White;
+            font-weight: bold;
+            font-size: large;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrap">
+        <div id="header">
+            <h1 id="sitename">
+                لوحة تحكم مدير الموقع
+            </h1>
+        </div>
+        <div id="contents">
+            <div id="homepage">
+                <div class="services" style="border: thin dotted #C0C0C0">
+                    <table>
+                        <tr>
+                            <td>
+                                <h2>
+                                    القائمة الرئيسية</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AdminHome.aspx">الرئيسية</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة الأخبار
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AddNews.aspx">إضافة الأخبار</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DeleteNews.aspx">حذف و تفعيل الأخبار</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة المستخدمين
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="UsersPasswords.aspx">كلمات السر</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AddTeachers.aspx">إضافة معلمين</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AddArticleWriters.aspx">إضافة الكتّاب</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="TransactionsHistoryManagement.aspx">حركات المستخدمين</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="ActivateUsers.aspx">تفعيل المستخدمين</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة المحتويات
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AddTests.aspx">إضافة أسئلة سنوات سابقة</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DeleteContents.aspx">حذف المحتويات</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة التعليقات
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CommnetsManagement.aspx">حذف و تفعيل التعليقات</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة الإعلانات
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AddBanners.aspx">إضافة إعلانات</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="ActivateBanners.aspx">تفعيل إعلانات</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة المواقع المفيدة
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AddUsefullWebsites.aspx">إضافة مواقع مفيدة</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DeleteUsefulWebsites.aspx">حذف مواقع مفيدة</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة المعلومات المفيدة
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AddUsefulInfo.aspx">إضافة معلومات مفيدة</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="DeleteUsefulInfo.aspx">حذف معلومات مفيدة</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة السنوات الدراسية
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="AcademicYearsManagement.aspx">إضافة سنوات دراسية</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                إدارة المواد الدراسية
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="SpecialtiesManagement.aspx">إضافة تخصصات</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CoursesManagement.aspx">إضافة مواد دراسية</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="LevelsManagement.aspx">إضافة مستويات المواد</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CourseLevelsManagement.aspx">ربط مستويات المواد</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="SpecialtyCourseManagement.aspx">مواد التخصص</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="CourseTeacherManagement.aspx">معلمو المواد</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menutd">
+                                <asp:LinkButton ID="lbtnLogOut" runat="server" CssClass="menutd" Text="تسجيل الخروج"
+                                    OnClick="lbtnLogOut_Click"></asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="portfolio_preview" dir="ltr">
+                    <asp:ScriptManager ID="ScriptManager2" runat="server" EnablePartialRendering="true"
+                        AsyncPostBackTimeout="999" ScriptMode="Release" LoadScriptsBeforeUI="true" EnablePageMethods="true">
+                        <CompositeScript>
+                            <Scripts>
+                                <asp:ScriptReference Path="~/GUI/js/RequestHandler.js" />
+                            </Scripts>
+                        </CompositeScript>
+                    </asp:ScriptManager>
+                    <asp:UpdateProgress ID="upAjaxUpdate" runat="server" DisplayAfter="0">
+                        <ProgressTemplate>
+                            <div id="UpdateDiv" class="loadingPanel">
+                                <img id="Img1" src="~/GUI/images/ajax-loader22.gif" alt="Loading" runat="server" />
+                                ...الرجاء الانتظار
+                            </div>
+                        </ProgressTemplate>
+                    </asp:UpdateProgress>
+                    <!-- Content Place Holder  -->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="clear">
+                </div>
+                <br />
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

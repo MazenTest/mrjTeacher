@@ -1,0 +1,18 @@
+
+Log Entry : 
+03/19/2012 00:05:19
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/NewsDetails.aspx?Nid=1 Error Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_COMMENT_USERS". The conflict occurred in database "tbz_09-03-2012", table "dbo.USERS", column 'USER_ID'.
+The statement has been terminated. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 943
+   at MyComponent.Business.BLL.AddComment(Comment comment) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 163
+   at GUI_PublicPages_NewsDetails.btnSaveComment_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\PublicPages\NewsDetails.aspx.cs:line 54
+__________________________

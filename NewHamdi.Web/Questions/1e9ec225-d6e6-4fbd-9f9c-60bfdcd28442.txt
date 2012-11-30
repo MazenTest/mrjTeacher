@@ -1,0 +1,52 @@
+USE [MyDb]
+GO
+/****** Object:  StoredProcedure [dbo].[sprocEmailAddressSelectList]    Script Date: 01/17/2012 14:06:50 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[sprocEmailAddressSelectList] 
+ 
+  @P_PAGE_INDEX INT,
+  @pageSize int 
+ 
+AS 
+
+DECLARE @start_index int;
+DECLARE @end_index int;
+DECLARE @total_records int;
+ 
+set @P_PAGE_INDEX = @P_PAGE_INDEX + 1;
+               
+SET @start_index = (@P_PAGE_INDEX -1) * @pageSize + 1;
+set @end_index = (@P_PAGE_INDEX * @pageSize )
+
+  SELECT  
+    [USER_ID],
+	[EMAIL],
+	[PASSWORD],
+	[FIRST_NAME],
+	[LAST_NAME],
+	[IMAGE_NAME],
+	[CV],
+	[ROLE_ID] 
+    
+  FROM  
+    (
+		        SELECT ROW_NUMBER() OVER (ORDER BY USER_ID) AS Row,  
+				[USER_ID],
+				[EMAIL],
+				[PASSWORD],
+				[FIRST_NAME],
+				[LAST_NAME],
+				[IMAGE_NAME],
+				[CV],
+				[ROLE_ID]
+				FROM [USERS] WHERE [USER_ID] > 10
+    ) 
+		AS EmailRows 
+  WHERE  
+    (Row between (@start_index) AND @end_index )
+
+dont forget to add new methods to get provider by id without image :)
+ 

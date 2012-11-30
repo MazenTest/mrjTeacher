@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <script type="text/javascript" src="js/jquery.core.js"></script>
+
+    <script type="text/javascript" src="js/jquery.superfish.js"></script>
+
+    <script type="text/javascript" src="js/jquery.jcarousel.pack.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+
+    <script type="text/javascript" src="js/jquery.scripts.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrap">
+        <div class="top_corner">
+        </div>
+        <div id="main_container">
+            <div id="header">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/logo.gif" alt="" title="" border="0" /></a></div>
+                <a href="make-a-donation.html" class="make_donation"></a>
+                <div id="menu">
+                    <ul>
+                        <li><a class="current" href="index.html" title="">الرئيسية</a></li>
+                        <li><a href="#" title="">حول الشركة</a></li>
+                        <li><a href="#" title="">مشاريعنا</a></li>
+                        <li><a href="#" title="">عملائنا</a></li>
+                        <li><a href="#" title="">شهادات</a></li>
+                        <li><a href="contact.html" title="">الإتصال بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="middle_banner">
+                <div class="featured_slider">
+                    <!-- begin: sliding featured banner -->
+                    <div id="featured_border" class="jcarousel-container">
+                        <div id="featured_wrapper" class="jcarousel-clip">
+                            <ul id="featured_images" class="jcarousel-list">
+                                <li>
+                                    <img src="images/slider_photo.jpg" width="965" height="280" alt="" /></li>
+                                <li>
+                                    <img src="images/slider_photo2.jpg" width="965" height="280" alt="" /></li>
+                                <li>
+                                    <img src="images/slider_photo3.jpg" width="965" height="280" alt="" /></li>
+                                <li>
+                                    <img src="images/slider_photo2.jpg" width="965" height="280" alt="" /></li>
+                            </ul>
+                        </div>
+                        <div id="featured_positioner_desc" class="jcarousel-container">
+                            <div id="featured_wrapper_desc" class="jcarousel-clip">
+                                <ul id="featured_desc" class="jcarousel-list">
+                                    <li>
+                                        <div>
+                                            <p>
+                                                الحياة زهرة، إذا أسقيتها كبرت وتفتحت وإذا أهملتها ذبلت وماتت.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>
+                                                الحياة زهرة، إذا أسقيتها كبرت وتفتحت وإذا أهملتها ذبلت وماتت.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>
+                                                الحياة زهرة، إذا أسقيتها كبرت وتفتحت وإذا أهملتها ذبلت وماتت.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>
+                                                الحياة زهرة، إذا أسقيتها كبرت وتفتحت وإذا أهملتها ذبلت وماتت.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul id="featured_buttons" class="clear_fix">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                    <!-- end: sliding featured banner -->
+                </div>
+            </div>
+            <!---------------------------------end of middle banner-------------------------------->
+            <div class="center_content">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="home_section_right">
+                    <img src="images/icon1.gif" alt="" title="" class="home_section_icon" border="0">
+                    <h2 class="home_title">
+                        مانقوم به</h2>
+                    <div class="home_subtitle">
+                        هنا نبذة مختصر عن نشاطاتنا</div>
+                    <div class="home_section_thumb">
+                        <img src="images/home_section_thumb1.jpg" alt="" title="" border="0">
+                    </div>
+                    <p>
+                        <span>الإستضافة والتصميم وبرمجة الويب</span><br>
+                        الإستضافة أساس بناء الويب العربي، نكسوه بكسوة إحترافية وعمل إبداعي
+                        <br>
+                        <br>
+                        <span>نشر الموقع عآلميا</span><br>
+                        ننشر موقعك في الويب العربي والغربي
+                    </p>
+                    <a href="" class="more">
+                        <img src="images/more.gif" alt="" title="" border="0"></a>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="home_section_right">
+                    <img src="images/icon2.gif" alt="" title="" class="home_section_icon" border="0">
+                    <h2 class="home_title">
+                        من نحن</h2>
+                    <div class="home_subtitle">
+                        نبذة مختصرة عنا</div>
+                    <div class="home_section_thumb">
+                        <img src="images/home_section_thumb2.jpg" alt="" title="" border="0">
+                    </div>
+                    <p>
+                        <span>رئيس المؤسسة والداعم المالي</span><br>
+                        رئيس المؤسسة "الهاشمي" والداعم الرسمي لها والمسوق لمنتجاتها
+                        <br>
+                        <br>
+                        <span>فروعنا حول العالم</span><br>
+                        بلاد الحجاز : مكة المكرمة / حي الزهور / فرع رقم 5
+                    </p>
+                    <a href="" class="more">
+                        <img src="images/more.gif" alt="" title="قراءة المزيد" border="0"></a>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="home_section_right">
+                    <img src="images/icon3.gif" alt="" title="قراءة المزيد" class="home_section_icon"
+                        border="0">
+                    <h2 class="home_title">
+                        الخدمات الخاصة</h2>
+                    <div class="home_subtitle">
+                        خدمات خاصة للشركات</div>
+                    <div class="home_section_thumb">
+                        <img src="images/home_section_thumb3.jpg" alt="" title="" border="0">
+                    </div>
+                    <p>
+                        <span>خصومات للمؤسسات الإسلامية</span><br>
+                        نقدم خصومات مميزة للمؤسسات والشركات الإسلامية تصل إلى 55%.
+                        <br>
+                        <br>
+                        <span>خدمات البرمجة الكبيرة</span><br>
+                        رمجة المواقع الخاصة للشركات الكبيرة.
+                    </p>
+                    <a href="" class="more">
+                        <img src="images/more.gif" alt="" title="قراءة المزيد" border="0"></a>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="left_block_wide">
+                    <h2>
+                        أخر المشاريع</h2>
+                    <a href="#">
+                        <img src="images/p1.jpg" alt="" title="" border="0" class="projects" /></a>
+                    <a href="#">
+                        <img src="images/p2.jpg" alt="" title="" border="0" class="projects" /></a>
+                    <a href="#">
+                        <img src="images/p3.jpg" alt="" title="" border="0" class="projects" /></a>
+                </div>
+                <div class="right_block">
+                    <h2>
+                        إشترك في القائمة البريدية</h2>
+                    <p>
+                        ضع بريدك الإلكتروني، ثم إضغط على تسجيل للإشتراك بالقائمة.
+                    </p>
+                    <form id="newsletter">
+                    <input type="text" name="" class="newsletter_input" />
+                    <input type="submit" name="" class="newsletter_submit" value="تسجيل" />
+                    </form>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="copyright">
+                    <a href="http://csstemplatesmarket.com/">تصميم csstemplates market</a> | <a href="http://www.maxservs.com">
+                        تعريب <span lang="en-us">MaxEdit</span></a></div>
+                <div class="footer_links">
+                    <a class="current" href="index.html" title="">الرئيسية</a> <a href="#" title="">عن الشركة</a>
+                    <a href="#" title="">مشاريعنا</a> <a href="#" title="">عملائنا</a> <a href="#" title="">
+                        شهادات</a> <a href="contact.html" title="">الإتصال بنا</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

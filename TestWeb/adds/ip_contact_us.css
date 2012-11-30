@@ -1,0 +1,6 @@
+body, td, p  {font-family: Tahoma; font-size: 12px}
+input, .input {font-size: 10 px; font-family: Tahoma}
+table {border-collapse: collapse}
+.footer {font-size: 10px; font-weight: bold; color: black; text-decoration: none}
+a.footer {font-size: 10px; font-weight: bold; color: black; text-decoration: underline}
+a.footer:hover {font-size: 10px; font-weight: bold; color: red; text-decoration: none}

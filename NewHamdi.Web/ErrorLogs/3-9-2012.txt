@@ -1,0 +1,21 @@
+
+Log Entry : 
+03/09/2012 08:14:38
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/PublicHome.aspx Error Message: Thread was being aborted. Inner Exception : 
+Trace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path)
+   at MasterPage.btnSend_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\MasterPage.master.cs:line 45
+__________________________
+
+Log Entry : 
+03/09/2012 08:18:40
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/PublicHome.aspx Error Message: Thread was being aborted. Inner Exception : 
+Trace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at MasterPage.btnSend_Click(Object sender, EventArgs e) in f:\Development\Graduation Projects\NewHamdi\NewHamdi\NewHamdi.Web\GUI\PublicPages\MasterPage.master.cs:line 45
+__________________________

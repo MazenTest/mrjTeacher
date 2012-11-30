@@ -1,0 +1,85 @@
+
+Log Entry : 
+04/03/2012 00:03:00
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/ArticleDetails.aspx?Aid=5 Error Message: Procedure or function 'AddComment' expects parameter '@P_REF_ARTICLE_ID', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1161
+   at MyComponent.Business.BLL.AddComment(Comment comment) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 198
+   at GUI_PublicPages_ArticleDetails.btnSaveComment_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\PublicPages\ArticleDetails.aspx.cs:line 54
+__________________________
+
+Log Entry : 
+04/03/2012 00:05:26
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/ArticleDetails.aspx?Aid=5 Error Message: Procedure or function 'AddComment' expects parameter '@P_REF_ARTICLE_ID', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1161
+   at MyComponent.Business.BLL.AddComment(Comment comment) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 198
+   at GUI_PublicPages_ArticleDetails.btnSaveComment_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\PublicPages\ArticleDetails.aspx.cs:line 54
+__________________________
+
+Log Entry : 
+04/03/2012 00:45:49
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/ArticleWriterInfo.aspx?Arid=13 Error Message: Procedure or function 'AddComment' expects parameter '@P_REF_ARTICLE_WRITER_ID', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1202
+   at MyComponent.Business.BLL.AddComment(Comment comment) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 204
+   at ArticleWriterInfo.btnSaveComment_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\PublicPages\ArticleWriterInfo.aspx.cs:line 61
+__________________________
+
+Log Entry : 
+04/03/2012 00:47:22
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/ArticleWriterInfo.aspx?Arid=13 Error Message: Procedure or function 'AddComment' expects parameter '@P_REF_ARTICLE_WRITER_ID', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1210
+   at MyComponent.Business.BLL.AddComment(Comment comment) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 204
+   at ArticleWriterInfo.btnSaveComment_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\PublicPages\ArticleWriterInfo.aspx.cs:line 61
+__________________________
+
+Log Entry : 
+04/03/2012 00:48:07
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/ArticleWriterInfo.aspx?Arid=13 Error Message: Procedure or function 'AddComment' expects parameter '@P_REF_ARTICLE_WRITER_ID', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddComment(Comment Comment) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1210
+   at MyComponent.Business.BLL.AddComment(Comment comment) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 204
+   at ArticleWriterInfo.btnSaveComment_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\PublicPages\ArticleWriterInfo.aspx.cs:line 61
+__________________________

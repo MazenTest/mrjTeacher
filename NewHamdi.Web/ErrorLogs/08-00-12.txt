@@ -1,0 +1,15 @@
+
+Log Entry : 
+03/08/2012 14:15:57
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/testrrr.aspxException Error Message: Attempted to divide by zero. Exception Inner Exception : 
+__________________________
+
+Log Entry : 
+03/08/2012 14:17:16
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/testrrr.aspxException Error Message: Attempted to divide by zero. Exception Inner Exception : 
+__________________________
+
+Log Entry : 
+03/08/2012 14:18:05
+Error in: http://localhost:50938/NewHamdi.Web/GUI/PublicPages/testrrr.aspxException Error Message: Attempted to divide by zero. Exception Inner Exception : 
+__________________________

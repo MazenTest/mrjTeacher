@@ -1,0 +1,34 @@
+
+Log Entry : 
+03/25/2012 23:18:19
+Error in: http://localhost:50938/NewHamdi.Web/GUI/AdminPages/AcademicYearsManagement.aspx Error Message: Procedure or function 'AddAcademic_Years' expects parameter '@P_ACADEMIC_YEAR_NAME', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddAcademicYear(AcademicYear academicYear) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1668
+   at MyComponent.Business.BLL.AddAcademicYear(AcademicYear academicYear) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 308
+   at GUI_AdminPages_AcademicYearsManagement.btnSave_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\AdminPages\AcademicYearsManagement.aspx.cs:line 35
+__________________________
+
+Log Entry : 
+03/25/2012 23:19:32
+Error in: http://localhost:50938/NewHamdi.Web/GUI/AdminPages/AcademicYearsManagement.aspx Error Message: Procedure or function 'AddAcademic_Years' expects parameter '@P_ACADEMIC_YEAR_NAME', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddAcademicYear(AcademicYear academicYear) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1668
+   at MyComponent.Business.BLL.AddAcademicYear(AcademicYear academicYear) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 308
+   at GUI_AdminPages_AcademicYearsManagement.btnSave_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\AdminPages\AcademicYearsManagement.aspx.cs:line 35
+__________________________

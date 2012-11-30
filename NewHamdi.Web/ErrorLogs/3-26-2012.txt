@@ -1,0 +1,17 @@
+
+Log Entry : 
+03/26/2012 00:02:00
+Error in: http://localhost:50938/NewHamdi.Web/GUI/AdminPages/SpecialtiesManagement.aspx Error Message: Procedure or function 'InsertSPECIALTY' expects parameter '@SPECIALTY_NAME', which was not supplied. Inner Exception : 
+Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at MyComponent.DataAccess.DAL.AddSpecialty(Specialty specialty) in D:\NewHamdi\ClassLibrary1\DAL\DAL.cs:line 1746
+   at MyComponent.Business.BLL.AddSpecialty(Specialty specialty) in D:\NewHamdi\ClassLibrary1\BLL\BLL.cs:line 333
+   at GUI_AdminPages_SpecialtiesManagement.btnSave_Click(Object sender, EventArgs e) in d:\NewHamdi\NewHamdi.Web\GUI\AdminPages\SpecialtiesManagement.aspx.cs:line 35
+__________________________

@@ -1,0 +1,147 @@
+<html dir=rtl>
+<head>
+<title>اتصل بنا</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+<link rel="stylesheet" href="ip_contact_us.css" type="text/css">
+</head>
+<body>
+
+<!-- إذا أردت تشغيل السكريبت من داخل ملف موجود عندك فامسح السطور السابقة - هي موضوعة لكي تجرب السكريبت كما هو الآن -->
+
+
+
+
+
+
+
+  <p align=center><b>اتصل بنا</b></p>
+<!--
+	// ---------- هذا هو الملف الذي تضعه في موقعك بصفة مستقلة أو داخل أي ملف عندك
+	
+	// ---------- يمكنك زيادة أي عدد حقول تريدها .. 
+
+	// ---------- ضع هذا الملف كما هو بعد تعديل الحقول داخل أي ملف موجود عندك
+
+	// ---------- أهم شيء: لا تغير اسم الحقول المسماه:
+	// ---------- الاسم - الإيميل
+
+	// ---------- http://www.internetplus.biz :)
+
+-->
+
+<SCRIPT LANGUAGE="JavaScript1.1" TYPE="text/javascript" src="ip_contact_us.js"></SCRIPT>
+
+<form name="form1" method="post" action="ip_contactus.php"  enctype="multipart/form-data"  onSubmit="
+ return mariam(this); ">
+
+  <table border="1" cellspacing="0" cellpadding="3" align="center" bordercolor="#666666">
+    <!--   اسم المتصل .. لا يجب تغييره إطلاقا ..   -->
+    <tr> 
+      <td align="left"><b>الاسم:</b></td>
+      <td> 
+        <input type="text" name="الاسم">
+      </td>
+    </tr>
+    <!--//   اسم المتصل ..   -->
+
+    <!--   إيميل المتصل .. أيضا لا يجب تغييره ..   -->
+    <tr> 
+      <td align="left"><b>الإيميل:</b></td>
+      <td> 
+        <input type="text" name="الإيميل" onChange="ahmed(this,'الإيميل غير صحيح ..');" dir="ltr">
+      </td>
+    </tr>
+    <!--//   إيميل المتصل ..    -->
+
+    <!--   الغرض من الاتصال   -->
+    <tr> 
+      <td align="left"><b>الغرض من الاتصال:</b></td>
+      <td> 
+        <select name="الغرض" class="input">
+          <option value="اتصال عام" selected>اتصال عام</option>
+          <option value="اقتراح">اقتراح</option>
+          <option value="شكوى">شكوى</option>
+        </select>
+      </td>
+    </tr>
+    <!--//   الغرض من الاتصال   -->
+
+    <!--   أهمية الرسالة   -->
+    <tr> 
+      <td align="left"><b>أهمية الرسالة:</b></td>
+      <td> 
+        <select name="الأهمية" class="input">
+          <option value="3" selected>عادية</option>
+          <option value="2">متوسطة</option>
+          <option value="1">هامة</option>
+        </select>
+      </td>
+    </tr>
+    <!--//   أهمية الرسالة   -->
+
+
+    <!--   مثال على حقل جديد للعنوان مثلا
+    <tr> 
+      <td align="left"><b>العنوان:</b></td>
+      <td> 
+        <input type="text" name="العنوان">
+      </td>
+    </tr>
+
+  -->
+
+
+
+    <!--   طريقة الاتصال المفضلة   -->
+    <tr> 
+      <td align="left"><b>طريقة الاتصال المفضلة:</b></td>
+      <td> 
+        <input type="radio" name="الطريقة" value="هاتف">
+        بالهاتف 
+        <input type="radio" name="الطريقة" value="إيميل" checked>
+        بالإيميل </td>
+    </tr>
+    <!--//   طريقة الاتصال المفضلة   -->
+
+    <!--   الرسالة   -->
+    <tr> 
+      <td align="left"><b>الرسالة:</b></td>
+      <td> 
+        <textarea name="الرسالة" cols="40" rows="5" class="input"></textarea>
+      </td>
+    </tr>
+    <!--//   الرسالة   -->
+
+    <!--  الملف   -->
+    <tr> 
+      <td align="left"><b>إرفاق ملف:</b></td>
+      <td>
+        <input type="file" name="file">
+      </td>
+    </tr>
+    <!--//  الملف   -->
+	
+    <tr> 
+      <td>&nbsp;</td>
+      <td> 
+        <input type="submit" name="Submit" value="اتصل بنا">
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<!--   ترك هذا السطر وفيه الرابط إلى موقعي شرط لاستخدام السكريبت ..   -->
+<p align=center class=footer>سكريبت اتصل بنا (3) من <a href="http://www.internetplus.biz" target="_blank" class=footer>إنترنت 
+  بلس</a></p>
+<!--   نهاية الحقوق  -->  
+
+
+
+
+
+
+
+
+<!-- إذا أردت تشغيل السكريبت من داخل ملف موجود عندك فامسح السطر التالي -->
+</body>

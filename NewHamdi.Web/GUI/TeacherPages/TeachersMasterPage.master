@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeFile="TeachersMasterPage.master.cs"
+    Inherits="TeachersMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link href="../css/layout.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/Menu/MenuMatic.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            width: 81px;
+        }
+        .style3
+        {
+            width: 61px;
+        }
+        .style4
+        {
+            width: 232px;
+        }
+        .style5
+        {
+            width: 231px;
+        }
+        .style6
+        {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrap">
+        <div id="header">
+            <h1 id="sitename">
+                لوحة تحكم المعلم
+            </h1>
+            <div class="clear">
+            </div>
+        </div>
+        <div id="contents">
+            <div id="topbar">
+                <asp:ScriptManager ID="ScriptManager2" runat="server" EnablePartialRendering="true"
+                    AsyncPostBackTimeout="999" ScriptMode="Release" LoadScriptsBeforeUI="true" EnablePageMethods="true">
+                    <CompositeScript>
+                        <Scripts>
+                            <asp:ScriptReference Path="~/GUI/js/RequestHandler.js" />
+                        </Scripts>
+                    </CompositeScript>
+                </asp:ScriptManager>
+                <asp:UpdateProgress ID="upAjaxUpdate" runat="server" DisplayAfter="0">
+                    <ProgressTemplate>
+                        <div id="UpdateDiv" class="loadingPanel">
+                            <img id="Img1" src="~/GUI/images/ajax-loader22.gif" alt="Loading" runat="server" />
+                            ...الرجاء الانتظار
+                        </div>
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+                <div class="columns">
+                    <asp:UpdatePanel ID="upnlLogin" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <table width="100%" cellpadding="1" cellspacing="2" dir="rtl">
+                                <tr id="trLogin" runat="server">
+                                    <td class="style2">
+                                        اسم المستخدم
+                                    </td>
+                                    <td class="style5">
+                                        <asp:TextBox ID="txtUserName" runat="server" CssClass="textBox"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="rfvUserName" runat="server" ControlToValidate="txtUserName"
+                                            ValidationGroup="Login">*</asp:RequiredFieldValidator>
+                                    </td>
+                                    <td class="style3">
+                                        كلمة المرور
+                                    </td>
+                                    <td class="style4">
+                                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="textBox"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword"
+                                            ValidationGroup="Login">*</asp:RequiredFieldValidator>
+                                    </td>
+                                    <td class="style6">
+                                        <asp:Button ID="btnLogin" runat="server" Text="دخول" CssClass="btn" ValidationGroup="Login" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <asp:Label ID="lblWarning" runat="server" ForeColor="Red" Text="اسم مستخدم او كلمة مرور خاطئة"
+                                            Visible="false"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr runat="server" id="trWelcome" visible="false">
+                                    <td>
+                                        <asp:Label ID="lblWelcome" runat="server" Text="" Font-Bold="true"></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div id="homepage">
+                <div id="dvMenu" runat="server" visible="false">
+                    <div class="services" style="border: thin dotted #C0C0C0">
+                        <h2 class="subhead">
+                            القائمة الرئيسية</h2>
+                        <ul>
+                            <li class="idea"><a href="TeacherHome.aspx">الرئيسية</a></li>
+                            <li class="idea"><a href="MyProfile.aspx">ملفي الشخصي</a></li>
+                            <li class="idea"><a href="AddContent.aspx">إضافة محتويات</a></li>
+                            <li class="idea"><a href="CommnetsManagement.aspx">إدارة التعليقات</a></li>
+                            <li class="idea"><a href="ChangePassword.aspx">تغيير كلمة السر</a></li>
+                            <li class="idea">
+                                <asp:LinkButton ID="lbtnLogOut" runat="server" Text="تسجيل الخروج" OnClick="lbtnLogOut_Click"></asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </div>
+                <div dir="rtl" style="vertical-align: top; min-height: 200px">
+                    <!-- Content Place Holder  -->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <br />
+            </div>
+            <div class="clear">
+            </div>
+            <div id="midbottom">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footercontent">
+                <p>
+                    جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
